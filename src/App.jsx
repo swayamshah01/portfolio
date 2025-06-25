@@ -7,6 +7,8 @@ import Experiences from "./sections/Experiences";
 import Testimonial from "./sections/Testimonial";
 import Contact from "./sections/Contact";
 import Footer from './sections/Footer';
+import SmoothScrollProvider from "./components/SmoothScrollProvider";
+import ScrollProgress from "./components/ScrollProgress";
 
 const App = () => {
   return (
@@ -19,6 +21,8 @@ const App = () => {
       <Testimonial />
       <Contact />
       <Footer/>
+      <SmoothScrollProvider/>
+      <ScrollProgress/>
     </div>
   );
 };
