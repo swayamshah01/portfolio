@@ -1,88 +1,91 @@
 export const myProjects = [
+{
+  id: 1,
+  title: "HackMate",
+  description:
+    "A personalized hackathon platform that tracks individual progress, displays real-time upcoming/ongoing hackathons, and offers curated learning resources. Built using React, Tailwind CSS, and Prisma.",
+  subDescription: [
+    "Developed a user-friendly dashboard to manage personal hackathon journeys and milestones.",
+    "Implemented real-time hackathon updates using external APIs and dynamic state management.",
+    "Integrated Prisma ORM for seamless data management and efficient backend queries.",
+    "Designed a responsive UI with Tailwind CSS for resource sections and event listings.",
+    "Added a curated resource hub to assist users in team-building, tech stack selection, and submission tips.",
+  ],
+  href: "",
+  logo: "",
+  image: "/assets/projects/HackMate.png",
+  tags: [
     {
-    id: 1,
-    title: "HackMate",
-    description:
-      "A modern, interactive web application built with Blazor WebAssembly and .NET Core.",
-    subDescription: [
-      "Developed a fully interactive Single Page Application (SPA) using Blazor WebAssembly.",
-      "Implemented API interactions using .NET Core for a robust backend.",
-      "Designed responsive UI components with Tailwind CSS for an enhanced UX.",
-      "Integrated SQLite for efficient client-side database storage.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/HackMate.png",
-    tags: [
-      {
-        id: 1,
-        name: "React",
-        path: "/assets/logos/react.svg",
-      },
-      {
-        id: 2,
-        name: "OAuth",
-        path: "/assets/logos/dotnetcore.svg",
-      },
-      {
-        id: 3,
-        name: "Prisma",
-        path: "/assets/logos/sqlite.svg",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
-      },
-    ],
-  },
-  {
-    id: 4,
-    title: "BookNest",
-    description:
-      "A lightweight C++ game engine designed for 2D and 3D game development.",
-    subDescription: [
-      "Built a powerful rendering engine using OpenGL and C++.",
-      "Developed a physics engine with collision detection and particle effects.",
-      "Implemented a scripting system for easy game customization.",
-      "Optimized performance with multi-threading and efficient memory management.",
-    ],
-    href: "",
-    logo: "",
-    image: "",
-    tags: [
-      {
-        id: 1,
-        name: "React",
-        path: "/assets/logos/react.svg",
-      },
-      {
-        id: 2,
-        name: "Python",
-        path: "/assets/logos/csharp.svg",
-      },
-      {
-        id: 3,
-        name: "Git",
-        path: "/assets/logos/git.svg",
-      },
-      {
-        id: 4,
-        name: "CSS3",
-        path: "/assets/logos/microsoft.svg",
-      },
-    ],
-  },
+      id: 1,
+      name: "React",
+      path: "/assets/logos/react.svg",
+    },
+    {
+      id: 2,
+      name: "TailwindCSS",
+      path: "/assets/logos/tailwindcss.svg",
+    },
+    {
+      id: 3,
+      name: "Prisma",
+      path: "/assets/logos/prisma.svg",
+    },
+    {
+      id: 4,
+      name: "JavaScript",
+      path: "/assets/logos/javascript.svg",
+    },
+  ],
+},
+{
+  id: 2,
+  title: "BookNest",
+  description:
+    "An online library platform where users can rent, buy, and upload books, connect with friends, and explore genres. Built using React for frontend and Django for backend.",
+  subDescription: [
+    "Designed a clean and intuitive UI for browsing, renting, and buying books using React and CSS.",
+    "Integrated user authentication and friend connection features for a social reading experience.",
+    "Implemented book upload functionality with genre tagging and content moderation.",
+    "Built RESTful APIs using Django to manage books, orders, and user connections.",
+    "Developed a recommendation module based on user activity and genre preferences.",
+  ],
+  href: "",
+  logo: "/assets/logos/booknest.svg", // Replace with your actual logo path
+  image: "/assets/projects/BookNest.png",
+  tags: [
+    {
+      id: 1,
+      name: "React",
+      path: "/assets/logos/react.svg",
+    },
+    {
+      id: 2,
+      name: "Django",
+      path: "/assets/logos/django.svg", // Use this path if you have a Django logo
+    },
+    {
+      id: 3,
+      name: "Git",
+      path: "/assets/logos/git.svg",
+    },
+    {
+      id: 4,
+      name: "CSS3",
+      path: "/assets/logos/css3.svg",
+    },
+  ],
+},
+
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "Forever",
     description:
-      "Facilitates purchases from international websites like Amazon and eBay, allowing customers to shop from these sites and have products delivered domestically.",
+      "A responsive and dynamic e-commerce platform built with React and Tailwind CSS, offering a seamless shopping experience.",
     subDescription: [
-      "Built a scalable application with ASP.NET Core MVC, integrating global platforms like Amazon for domestic delivery.",
-      "Implemented secure authentication and database management using ASP.NET Core Identity and Entity Framework Core.",
-      "Designed a responsive frontend with Tailwind CSS, enhancing user experience.",
-      "Added payment systems, localization, and product filtering for functionality improvements.",
+      "Developed a modern UI with responsive product listings and category filters using React and Tailwind CSS.",
+      "Implemented a shopping cart system with local storage and context API for state management.",
+      "Integrated product search, user authentication, and dynamic routing with React Router.",
+      "Built reusable components for product cards, modals, and checkout process.",
     ],
     href: "",
     logo: "",
@@ -91,7 +94,7 @@ export const myProjects = [
       {
         id: 1,
         name: "React",
-        path: "/assets/logos/csharp.svg",
+        path: "/assets/logos/react.svg",
       },
       // {
       //   id: 2,
@@ -112,14 +115,14 @@ export const myProjects = [
   },
   {
     id: 4,
-    title: "Learning Management System",
+    title: "DevAcademy LMS",
     description:
-      "A web application that allows users to enroll in courses, watch video lectures, and take quizzes.",
+      "An intuitive Learning Management System designed using React and Tailwind CSS to manage courses, users, and assessments.",
     subDescription: [
-      "Integrated Auth0 for authentication, supporting OAuth, JWT, and multi-factor authentication.",
-      "Implemented role-based access control (RBAC) for fine-grained user permissions.",
-      "Developed a React-based frontend with Tailwind CSS for a sleek user experience.",
-      "Connected to a secure SQLite database for user data storage.",
+      "Built a role-based LMS for admins, instructors, and students using React with conditional routing.",
+      "Developed course enrollment, video playback, and quiz modules with smooth UI/UX.",
+      "Used Tailwind CSS to design a clean dashboard interface with responsive layouts.",
+      "Implemented dynamic routing for lessons, user profiles, and progress tracking.",
     ],
     href: "",
     logo: "",
@@ -147,18 +150,16 @@ export const myProjects = [
       },
     ],
   },
-
-  
   {
     id: 5,
-    title: "Movie Ticket Booking System",
+    title: "QuickShow",
     description:
-      "A fully customizable WordPress theme optimized for performance and SEO.",
+      "A sleek and user-friendly movie ticket booking platform developed with React and Tailwind CSS, offering real-time seat selection and booking functionality.",
     subDescription: [
-      "Developed a responsive WordPress theme using HTML5, CSS3, and JavaScript.",
-      "Integrated Tailwind CSS for modern styling and UI enhancements.",
-      "Optimized SEO and page speed using Vite.js for fast builds.",
-      "Implemented custom widgets and plugin compatibility for extended functionality.",
+      "Created an interactive movie listing and booking interface using React components.",
+      "Integrated dynamic seat selection layout with real-time availability status.",
+      "Implemented filtering options for location, date, and time with responsive design.",
+      "Developed reusable components for movie cards, modals, and booking summaries.",
     ],
     href: "",
     logo: "",
@@ -167,22 +168,22 @@ export const myProjects = [
       {
         id: 1,
         name: "React",
-        path: "/assets/logos/wordpress.svg",
+        path: "/assets/logos/react.svg",
       },
-      {
-        id: 2,
-        name: "MongoDB",
-        path: "/assets/logos/html5.svg",
-      },
-      {
-        id: 3,
-        name: "Express",
-        path: "/assets/logos/css3.svg",
-      },
+      // {
+      //   id: 2,
+      //   name: "MongoDB",
+      //   path: "/assets/logos/html5.svg",
+      // },
+      // {
+      //   id: 3,
+      //   name: "Express",
+      //   path: "/assets/logos/css3.svg",
+      // },
       {
         id: 4,
         name: "TailwindCSS",
-        path: "/assets/logos/vitejs.svg",
+        path: "/assets/logos/tailwindcss.svg",
       },
     ],
   },
@@ -233,7 +234,7 @@ export const mySocials = [
   },
   {
     name: "Linkedin",
-    href: "https://www.linkedin.com/in/ali-sanati/",
+    href: "https://www.linkedin.com/in/swayamshah01/",
     icon: "/assets/socials/linkedIn.svg",
   },
   {
@@ -280,6 +281,7 @@ export const experiences = [
     ],
   },
 ];
+
 export const reviews = [
   {
     name: "Jack",
@@ -326,7 +328,7 @@ export const reviews = [
   {
     name: "Eve",
     username: "@eve",
-    body: "So glad I found this. It has changed the game for me.",
+    body: "So glad I found this. It's based on the image you shared, it seems like the duplication might be happening in your React component that renders the projects. The data structure itself only has one BookNest entry.",
     img: "https://robohash.org/eve",
-  },
+  }
 ];
