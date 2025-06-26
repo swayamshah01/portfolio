@@ -1,6 +1,6 @@
 import { motion, useScroll, useSpring, useTransform } from "motion/react";
 
-const ParallaxBackground = () => {
+const Parallax = () => {
   const { scrollYProgress } = useScroll();
   const x = useSpring(scrollYProgress, { damping: 50 });
   const mountain3Y = useTransform(x, [0, 0.5], ["0%", "70%"]);
@@ -65,4 +65,4 @@ const ParallaxBackground = () => {
   );
 };
 
-export default ParallaxBackground;
+export default Parallax;
